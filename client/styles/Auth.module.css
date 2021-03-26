@@ -1,0 +1,9 @@
+.auth {
+  width: 40%;
+  height: 300px;
+  /* border: 1px black solid; */
+  margin: auto;
+  margin-top: 5%;
+  box-shadow: 7px 7px 31px 5px rgba(34, 60, 80, 0.2);
+  text-align: center;
+}

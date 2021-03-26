@@ -1,0 +1,30 @@
+.widget {
+  padding: 20px 30px;
+  background: white;
+  font-family: "Roboto", sans-serif;
+  width: 260px;
+  background-color: #181a1b;
+  border-radius: 8px;
+}
+
+.widget_list {
+  padding: 0;
+  list-style: none;
+}
+.widget_list a:before {
+  margin-right: 14px;
+}
+.widget_list a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  padding: 6px 0;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #b8b4ad;
+  transition: 0.3s linear;
+  transition: 0.36s ease;
+}
+.widget_list a:hover {
+  color: #b99d61;
+}
