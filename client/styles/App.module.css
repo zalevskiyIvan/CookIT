@@ -1,0 +1,28 @@
+.App {
+  background-color: #202324;
+}
+.App h1,
+.App h2,
+.App h3,
+.App p,
+.App span {
+  color: #b8b4ad;
+}
+.content {
+  display: grid;
+  grid-template-columns: 25% 45% 30%;
+  grid-column-gap: 3%;
+  margin-top: 3%;
+}
+.rightNavbar {
+  grid-column: 3/3;
+  margin-left: 6%;
+}
+.tape {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-left: 0%;
+}
+.leftNavbar {
+  margin-left: 28%;
+}

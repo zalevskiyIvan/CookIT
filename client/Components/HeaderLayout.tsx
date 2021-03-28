@@ -3,7 +3,7 @@ import React from "react";
 import style from "../styles/Header.module.css";
 import Link from "next/link";
 
-export default function HeaderLayout({ children }) {
+export default function HeaderLayout() {
   const token = 0;
   return (
     <div>
@@ -31,7 +31,6 @@ export default function HeaderLayout({ children }) {
           <h1>Ivan</h1>
         </div>
       </div>
-      <main>{children}</main>
     </div>
   );
 }
