@@ -1,19 +1,17 @@
 import { PlusOutlined } from "@ant-design/icons";
 import { Button, Form, Input } from "antd";
 import Modal from "antd/lib/modal/Modal";
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import style from "../styles/AddDishes.module.css";
-import { stepType } from "../common/types";
-import { actions } from "../redux/reducers/dishesReducer";
+
+import { actions } from "../redux/reducers/recipesReducer";
 
 export default function AddRecipie() {
   const dispatch = useDispatch();
   const formRef: any = useRef(null);
 
   const [stepCount, setStepCount] = useState(1);
-
-  const [formFlow, setFormFlow] = useState({} as stepType);
 
   const formHandleChange = (v: any) => {
     console.log(formRef);
@@ -27,7 +25,7 @@ export default function AddRecipie() {
     img?: string;
   }) => {
     const step = { id: stepCount, stepDescription, img };
-    dispatch(actions.setRecipieStep(step));
+    dispatch(actions.setrecipestep(step));
     formRef.current.resetFields();
     setStepCount(stepCount + 1);
   };
@@ -53,7 +51,6 @@ export default function AddRecipie() {
   const handleCancel = () => {
     setIsModalVisible(false);
   };
-  // ! 2 onFinish для Form
 
   return (
     <div className={style.main}>

@@ -1,0 +1,25 @@
+.all {
+  background-color: #202324;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.main {
+  background-color: #181a1b;
+  border-radius: 16px;
+  padding: 2px;
+}
+
+.img {
+  object-fit: cover;
+  width: 90%;
+  height: 400px;
+  border-radius: 30px;
+  margin-left: 5%;
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+.description {
+  font-size: 20px;
+  margin-left: 8%;
+  margin-top: 1%;
+}

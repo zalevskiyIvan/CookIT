@@ -1,10 +1,8 @@
 .widget {
   padding: 20px 30px;
-  background: white;
   font-family: "Roboto", sans-serif;
-  width: 260px;
   background-color: #181a1b;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 .widget_list {
@@ -21,7 +19,7 @@
   padding: 6px 0;
   letter-spacing: 1px;
   font-weight: 400;
-  color: #b8b4ad;
+  color: rgb(190, 190, 190);
   transition: 0.3s linear;
   transition: 0.36s ease;
 }

@@ -1,9 +1,22 @@
 .auth {
-  width: 40%;
-  height: 300px;
+  width: 80%;
+  /* height: 300px; */
   /* border: 1px black solid; */
   margin: auto;
   margin-top: 5%;
-  box-shadow: 7px 7px 31px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 7px 7px 31px 5px rgba(32, 54, 59, 0.2);
   text-align: center;
+  background-color: #181a1b;
+}
+.input {
+  border-radius: 2px;
+  width: 350px;
+  background-color: #333;
+  border: none;
+}
+.button {
+  border-radius: 2px;
+  width: 152px;
+  background-color: #333;
+  border: none;
 }

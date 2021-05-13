@@ -1,13 +1,15 @@
 import MainLayout from "../../Layout/MainLayout";
 import { useRouter } from "next/router";
-import RecipiesRenderer from "../../Components/RecipiesRenderer";
+import FullRecipe from "../../Components/FullRecipe";
+import RecipesRenderer from "../../Components/RecipesRenderer";
 
-export default function Recipies() {
+export default function Recipes() {
   const router = useRouter();
   const params: any = router.query.category;
+
   return (
     <MainLayout>
-      <RecipiesRenderer params={params} />
+      <RecipesRenderer params={params} />
     </MainLayout>
   );
 }

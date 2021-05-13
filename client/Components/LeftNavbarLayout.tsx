@@ -6,28 +6,28 @@ export default function LeftNavbarLayout() {
   return (
     <div className={style.widget}>
       <ul className={style.widget_list}>
-        <Link href="/recipies">
+        <Link href="/recipes">
           <a>
             <img src="/img/Feed.png" style={{ width: 35 }} />
             <span style={{ marginLeft: 9 }}>Лента</span>
           </a>
         </Link>
-        <Link href="/recipes/my">
+        <Link href="/profile">
           <a>
-            <img src="/img/My_recipies.png" style={{ width: 35 }} />
-            <span style={{ marginLeft: 9 }}>Мои рецепты</span>
+            <img src="/img/My_recipes.png" style={{ width: 35 }} />
+            <span style={{ marginLeft: 9 }}>Профиль</span>
           </a>
         </Link>
-        <Link href="/messages">
+        <Link href="/subscriptions">
           <a>
-            <img src="/img/Messages.png" style={{ width: 35 }} />
-            <span style={{ marginLeft: 9 }}>Сообщения</span>
+            <img src="/img/Followers.png" style={{ width: 35 }} />
+            <span style={{ marginLeft: 9 }}>Подписки</span>
           </a>
         </Link>
-        <Link href="/notes">
+        <Link href="/bookmarks">
           <a>
             <img src="/img/Notes.png" style={{ width: 35 }} />
-            <span style={{ marginLeft: 9 }}>Заметки</span>
+            <span style={{ marginLeft: 9 }}>Закладки</span>
           </a>
         </Link>
       </ul>

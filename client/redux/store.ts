@@ -4,7 +4,7 @@ import {
   applyMiddleware,
   AnyAction,
 } from "redux";
-import { dishesReducer } from "./reducers/dishesReducer";
+import { dishesReducer } from "./reducers/recipesReducer";
 import { userReducer } from "./reducers/userReducer";
 import thunkMiddleware from "redux-thunk";
 import { useMemo } from "react";

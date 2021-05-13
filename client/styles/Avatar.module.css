@@ -1,0 +1,24 @@
+.main {
+  /* height: 265px; */
+  width: 258px;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 20px;
+  background: #181a1b;
+  margin-left: 30%;
+}
+.toProfile {
+  height: 37px;
+  width: 210px;
+  background: #6a6760;
+  border: none;
+  border-radius: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.avatar {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+}

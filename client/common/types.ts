@@ -16,22 +16,37 @@ export type categoryType =
 
 export type stepType = { id: number; img?: string; stepDescription: string };
 
-export type commentsType = {
-  user: string | userType;
-  commentText: string;
-  likeCount: number;
-  post: string | dishesType;
+export type commentType = {
+  title: string;
+  childrenID?: commentType[];
+  userID?: userType;
+  postID: string | recipeType;
+  _id?: string;
+  parentID?: string | userType;
 };
-export type dishesType = {
-  recipie: Array<stepType>;
+
+export type recipeType = {
+  recipe: Array<stepType>;
   description: string;
   likesCount: number;
-  viewsCount: number;
   category: categoryType;
-  cook: string | userType;
-  ingridients: string;
+  cook: userType;
+  ingredients: string;
   img?: string;
-  comments: commentsType[];
+  comments: commentType[];
+  _id: string;
+  header: string;
+};
+
+export type fullInfo = {
+  gender: string;
+  birthday: string;
+  country: string;
+  city: string;
+  first_name?: string;
+  last_name?: string;
+  description?: string;
+  username?: string;
 };
 
 export type userType = {
@@ -40,8 +55,11 @@ export type userType = {
   username: string;
   role: string;
   avatar?: string;
-  dishes: Array<dishesType> | Array<string>;
+  recipes: Array<recipeType> | Array<string>;
   followers: Array<userType> | string;
-  following: Array<userType> | string;
+  subscriptions: Array<userType> | string;
   _id: string;
+  isAuthorized: boolean;
+  description: string;
+  fullInfo: fullInfo;
 };

@@ -7,16 +7,16 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import style from "../styles/AddDishes.module.css";
 import { useSelector } from "../common/hooks";
-import { dishesType } from "../common/types";
-import { actions, publishT } from "../redux/reducers/dishesReducer";
-import AddRecipie from "./AddRecipie";
+import { recipeType } from "../common/types";
+import { actions, publishT } from "../redux/reducers/recipesReducer";
+import AddRecipie from "./AddRecipe";
 
 export default function AddDishes() {
   const dish = useSelector((state) => state.dishesReducer.dish);
-  const recipie = useSelector((state) => state.dishesReducer.recipie);
+  const recipie = useSelector((state) => state.dishesReducer.recipe);
   const dispatch = useDispatch();
   const [screenNumber, setScreenNumber] = useState(1);
-  const [dishes, setDishes] = useState({} as dishesType);
+  const [dishes, setDishes] = useState({} as recipeType);
   useEffect(() => {
     if (screenNumber === 2) {
       dispatch(actions.setDish(dishes));
@@ -26,7 +26,7 @@ export default function AddDishes() {
     v.likeCount = 0;
     v.commentsCount = 0;
     v.viewsCount = 0;
-    v.recipie = [];
+    v.recipe = [];
     v.cook = localStorage.userID;
     setDishes(v);
     setScreenNumber(screenNumber + 1);
@@ -50,7 +50,7 @@ export default function AddDishes() {
   };
   const publish = () => {
     dispatch(publishT(dish, recipie));
-    router.push("/recipies");
+    router.push("/recipes");
   };
   const [plusImg, setPlusImg] = useState("");
   const changeImg = (v: any) => {
